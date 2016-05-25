@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<p lang="hu">
+    <title>Kvíz neve</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <head>
+        <title>Kvízelünk</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+              integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+              crossorigin="anonymous">
+    </head>
+
+<body>
+<div class="container" style="max-width: 700px">
+
+    <div class="embed-responsive embed-responsive-16by9">
+        <img src="" class="embed-responsive-item">
+    </div>
+
+
+    <h3><%= db %>. <%= question %></h3>
+
+    <hr>
+    
+    <form action="" method="post">
+    
+      <% if (error) { %>
+        <p><%= error %></p>
+      <% } %>
+    
+      <% answers.forEach(function (answer) { %>
+      <label class="btn btn-default btn-lg btn-block">
+          <div class="text-left">
+              <input type="radio" name="answer" value="<%= answer._id %>"/>
+              <%= answer.answer %>
+          </div>
+      </label>
+      <% }) %>
+
+      <input type="submit" value="Küldés">
+
+    </form>
+
+</div>
+</body>
+</html>

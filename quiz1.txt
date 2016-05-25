@@ -1,0 +1,11 @@
+Quiz1
+
+Q Melyik a kedvenc színed?
+A Piros
+C Kék
+A Zöld
+
+Q Fog sütni holnap a nap?
+A Igen
+C Nem
+A Talán

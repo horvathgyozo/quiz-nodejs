@@ -1,0 +1,11 @@
+Merre jártunk?
+
+Q Melyik nagyváros részlete látható a képen?
+C Barcelona
+A Párizs
+A London
+
+Q Pampam
+A Igen
+C Nem
+A Talán
